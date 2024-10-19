@@ -1,0 +1,40 @@
+$text-color: #000;
+
+.headerContainer {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #000000;
+  padding: 16px 32px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.date, .languageOption {
+  font-family: 'Times New Roman', 'Georgia', serif !important;
+  font-size: 1rem !important;
+}
+
+.languageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.languageOption {
+  cursor: pointer;
+  color: $text-color;
+  margin: 0 4px;
+
+  &.active {
+    font-weight: bold;
+  }
+}
+
+.languageDivider {
+  color: $text-color;
+  margin: 0 4px;
+  user-select: none;
+}
